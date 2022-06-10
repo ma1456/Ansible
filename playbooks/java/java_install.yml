@@ -1,0 +1,11 @@
+---
+- name: install java
+  become: yes
+  hosts : all
+  tasks:
+    - name: install java
+      ansible.builtin.apt:
+        name: ansible.builtin.apt
+        update_cache: yes
+        state: present
+        
